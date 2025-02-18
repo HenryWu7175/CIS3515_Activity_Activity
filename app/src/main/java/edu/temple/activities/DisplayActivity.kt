@@ -11,8 +11,8 @@ class DisplayActivity : AppCompatActivity() {
 
         // TODO Step 3: Extract transferred value and use for lyricsDisplayView text size
         with (findViewById<TextView>(R.id.lyricsDisplayTextView)) {
-
-        }
+            intent.getFloatExtra(TEXTKEY, 22f).toFloat()//must be float since you made it a float in step 2
+        }//the defualt value cna be 22f, basically a number that represents the data type
 
 
     }
